@@ -19,15 +19,34 @@ The OLA project consists of several components to provide modularity and extensi
 - [Ola.Banking.Mock](./src/Ola.Banking/Ola.Banking.Mock): Provides a mock implementation of banking services for testing and development.
 - [Ola.Commands](./src/Ola.Commands): Divided into several command libraries, each providing a specific set of instructions, including arithmetic, control flow, banking operations, utilities, and variable management.
 
+
 ## Getting Started
-To use OLA:
-1. **Clone the Repository**: Clone the project from the repository to your local machine.
-2. **Build the Solution**: Use your favorite IDE or command line to build the solution. This will compile all projects and prepare the output in the `bin` directory.
-3. **Run Scripts**: You can run any script by executing the following command in the console application directory:
-   ```sh
-   ola run Samples\all-instructions.ola
-   ```
-   Replace `all-instructions.ola` with any other script you want to test.
+
+1. Clone the Repository
+   Clone this project to your local machine
+2. Open and Run in Visual Studio
+        Open the .sln file in Visual Studio.
+        The startup project is already set to Ola.Console.
+        Run the solution. 
+        The post-build events take care of moving required files, letting you start experimenting with OLA right away. 
+        Visual Studio will automatically copy the required DLLs to the console app’s output folder so you can run sample scripts without extra steps.
+
+If you prefer the command line, build all libraries, then navigate to the Ola.Console output folder.
+Copy an Ola.Banking implementation; your own or Ola.Banking.Mock.dll to the Ola.Console output folder.
+Copy all command implementations Ola.Commands.XXX.dll to the Ola.Console output folder.
+Create a script of your own or try the ones under samples folder.
+
+Run a script
+```sh
+   ola run <script.ola>
+```
+
+Test a script
+```sh
+   ola test <script.ola>
+```
+
+That’s it!  If you have questions or run into issues, feel free to open an issue or pull request.
 
 ## Example Script
 Below is an example of an OLA script:
