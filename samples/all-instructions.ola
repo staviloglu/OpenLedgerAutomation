@@ -1,0 +1,52 @@
+CREATE DECIMAL AS var1
+PRINT var1
+
+CREATE DECIMAL AS var2
+PRINT var2
+
+SET var2 TO 2
+PRINT var2
+
+ADD var1 AND 10 AS var1
+PRINT var1
+
+SUBTRACT var2 FROM var1 AS var1
+PRINT var1
+
+MULTIPLY var1 BY 10 AS var1
+PRINT var1
+
+DIVIDE var1 BY 2 AS var1
+PRINT var1
+ 
+IF var1 == 40 THEN
+	PRINT "var1 40 oldu sorun yok!"
+ENDIF
+
+CREATE ACCOUNT AS account1
+PRINT account1
+
+TRANSFER 100 FROM TR650006227395216767759513 TO account1
+PRINT account1
+
+CREATE INTEGER AS loopIndex
+PRINT loopIndex
+
+INCREMENT loopIndex
+PRINT loopIndex
+
+DECREMENT loopIndex
+PRINT loopIndex
+
+GET ACCOUNTS AS accountList
+
+LABEL start
+PRINT loopIndex
+GET BALANCE OF accountList[loopIndex] AS accountBalance
+PRINT accountBalance
+INCREMENT loopIndex
+IF loopIndex < 4 THEN
+	GOTO start
+ENDIF
+
+PRINT "SON"

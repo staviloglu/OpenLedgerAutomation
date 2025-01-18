@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Ola.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "run ..\\..\\..\\..\\..\\samples\\all-instructions.ola"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ola.Commands.Core\Ola.Commands.Core.csproj" />
+  </ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="xcopy $(TargetDir)\$(TargetFileName) $(SolutionDir)\src\Ola.Console\bin\$(Configuration)\$(TargetFramework)" />
+	</Target>
+	
+</Project>

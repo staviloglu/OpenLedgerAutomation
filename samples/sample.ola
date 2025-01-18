@@ -1,0 +1,26 @@
+CREATE ACCOUNT AS account1
+CREATE ACCOUNT AS account2
+CREATE ACCOUNT AS account3
+
+TRANSFER 1000 FROM TR690006235637412755554983 TO account1
+
+GET BALANCE FOR account3 AS balance
+IF balance == 0 THEN 
+	TRANSFER 500 FROM account1 TO account3
+ENDIF
+
+GET BALANCE FOR account2 AS balance
+IF balance < 1000 THEN 
+	TRANSFER 500 FROM account1 TO account2
+ENDIF
+
+PRINT "Final Balances:"
+
+GET BALANCE FOR account1 AS account1FinalBalance
+PRINT account1FinalBalance
+
+GET BALANCE FOR account2 AS account2FinalBalance
+PRINT account2FinalBalance
+
+GET BALANCE FOR account3 AS account3FinalBalance
+PRINT account3FinalBalance

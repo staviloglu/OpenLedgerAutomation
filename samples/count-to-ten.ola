@@ -1,0 +1,13 @@
+CREATE INTEGER AS counter
+
+SET counter TO 1
+
+LABEL start
+
+PRINT counter
+
+INCREMENT counter
+
+IF counter <= 10 THEN
+	GOTO start
+ENDIF

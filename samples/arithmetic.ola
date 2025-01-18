@@ -1,0 +1,26 @@
+GET ACCOUNTS AS accountList
+GET BALANCE OF accountList[1] AS account1Balance
+PRINT account1Balance
+
+IF 10.20 == 10.20 THEN
+    PRINT "EÞÝT"
+ENDIF
+
+CREATE INTEGER AS index
+LABEL start
+IF index < accountsList.Count THEN
+    GET BALANCE OF accountsList[index].Iban AS currentBalance
+    IF currentBalance < 100 THEN
+        TRANSFER 200 FROM mainAccount TO accountsList[index].Iban
+    ENDIF
+    INCREMENT index
+    GOTO start
+ENDIF
+
+
+CREATE INTEGER AS variable
+ADD variable AND 5 AS variable
+SUBTRACT variable FROM 20 AS variable
+MULTIPLY variable BY 10 AS variable
+DIVIDE variable BY 2 AS variable
+PRINT variable

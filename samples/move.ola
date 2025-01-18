@@ -1,0 +1,13 @@
+TRANSFER 20 FROM TR690006235637412755554983 TO TR650006227395216767759513
+CREATE ACCOUNT AS newAccount
+TRANSFER 100 FROM TR690006235637412755554983 TO newAccount
+GET BALANCE FOR newAccount AS newAccountBalance
+PRINT newAccountBalance
+
+IF newAccountBalance >= 100 THEN 
+	PRINT "yeni hesabın bakiyesi 100TL veya daha fazla"	
+ENDIF
+
+GET Accounts 
+CREATE INTEGER index
+Account[index]
