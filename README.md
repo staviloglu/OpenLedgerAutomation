@@ -1,6 +1,6 @@
 # Open Ledger Automation (OLA)
 
-**Open Ledger Automation (OLA)** is a specialized scripting language I designed to **automate banking and financial operations**. With OLA, users can create, manage, and execute various banking tasks through simple, easy-to-understand scripts—such as transferring money, managing accounts, and automating financial workflows via open banking APIs or custom implementations.
+**Open Ledger Automation (OLA)** is a specialized scripting language I designed to **automate banking and financial operations**. With OLA, users can create, manage, and execute various banking tasks through simple, easy-to-understand scripts—such as transferring money, managing accounts, and automating financial workflows via open banking APIs or custom implementations. See [sample scripts](samples).
 
 Behind the scenes, **“OLA” also happens to be the initials of my newborn triplets: Oğuz, Levent, and Alper**—a personal touch that reflects the hope and promise of this language to grow and evolve, just like they will.
 
